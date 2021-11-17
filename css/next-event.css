@@ -1,0 +1,159 @@
+html,
+body {
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #111111;
+	font-weight: 600;
+}
+
+
+h2 {
+	font-size: 30px;
+}
+
+
+h4 {
+	font-size: 20px;
+}
+
+
+p {
+	font-size: 15px;
+	color: #484848;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 0 0 8px 0;
+}
+
+
+/*---------------------
+  Event Counter
+-----------------------*/
+
+.event-counter {
+	background: #201D6D;
+	
+}
+
+.event-counter .event-name h2 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 900;
+	margin-bottom: 11px;
+}
+
+.event-counter .event-name h4 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.event-counter .event-name span {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 9px 11px 9px 15px;
+	background: #F21E7D;
+	display: inline-block;
+	margin-left: 12px;
+}
+
+.event-counter .countdown-timer {
+	margin-top: -10px;
+}
+
+.event-counter .countdown-timer .cd-item {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.event-counter .countdown-timer .cd-item:last-child {
+	margin-right: 0;
+}
+
+.event-counter .countdown-timer .cd-item span {
+	display: block;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 6px;
+}
+
+.event-counter .countdown-timer .cd-item p {
+	color: #F21E7D;
+	font-size: 70px;
+	font-weight: 400;
+}
+
+/*---------------------
+  Responsive Styles
+-----------------------*/
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1176px;
+	}
+}
+
+/* Medium Device : 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	.event-counter .countdown-timer .cd-item {
+		margin-right: 50px;
+	}
+	
+}
+
+/* Tablet : 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.event-counter .event-name {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.event-counter .countdown-timer {
+		text-align: center;
+	}
+	
+}
+
+/* Large Mobile : 480px. */
+
+@media only screen and (max-width: 767px) {
+	
+	.event-counter .countdown-timer .cd-item {
+		margin-right: 30px;
+	}
+
+	.event-counter .event-name {
+		margin-bottom: 20px;
+	}
+	
+	.hurry-up .countdown-timer .cd-time {
+		float: none;
+		margin-right: 0;
+		text-align: center;
+	}
+	
+}
+
+/* Small Mobile: 320px */
+
+@media only screen and (max-width: 479px) {
+	
+	.event-counter .event-name h2 {
+		font-size: 20px;
+	}
+	
+}
